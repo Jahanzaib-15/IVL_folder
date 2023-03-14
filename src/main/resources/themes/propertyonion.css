@@ -1,0 +1,962 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* property onion custom theme */
+/**** DEFAULT THEME ****/
+/* buttons, headings and links */
+
+
+/* Constants */
+
+body {
+    background-color: #ffffff !important;
+}
+
+header {
+    margin-bottom: 0px;
+}
+
+.prn {
+    padding-right: 0px !important;
+}
+
+.pln {
+    padding-left: 0px !important;
+}
+
+.page-wrapper {
+    padding-top: 10px;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* Headings */
+
+h2 {
+    font-size: 24px;
+    margin: 0px;
+    color: #000;
+    font-weight: 600;
+}
+
+h4 {
+    color: #000;
+    font-weight: 600;
+}
+
+#post-title {
+    font-size: 18px;
+}
+
+.postbody p {
+    font-size: 16px;
+}
+
+.light-green {
+    background-color: #039be5 !important;
+}
+
+.page-content {
+    padding-top: 10px;
+}
+
+.page-content .card-panel {
+    border: 1px solid #d7d7d7;
+}
+
+.po-theme-text {
+    color: #039be5 !important;
+}
+
+a,
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: #039be5;
+}
+
+.navbtn-hover {
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+}
+
+.filter-active {
+    background-color: #039be5;
+    color: white;
+}
+
+/* nav bar and footer */
+body,
+footer.page-footer {
+    background-color: #444444;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav .nav-wrapper .po-menu a {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+nav .nav-wrapper ul a {
+    background-color: transparent !important;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav .nav-wrapper .po-menu li:last-child a {
+    padding-right: 0px;
+}
+
+nav .nav-wrapper .po-menu li:last-child {
+    display: block !important;
+}
+
+nav .nav-wrapper ul a:hover {
+    /* color: #178bd1; */
+    background-color: #ffffff;
+}
+
+nav .nav-wrapper .dropdown-content li {
+    min-height: auto;
+}
+
+nav .nav-wrapper .dropdown-content li:hover {
+    background-color: #ffffff;
+}
+
+nav .nav-wrapper .dropdown-content li.active {
+    background-color: #ffffff;
+}
+
+nav .nav-wrapper .dropdown-content li a {
+    padding: 6px 10px;
+}
+
+nav .nav-wrapper .dropdown-content li a:hover {
+    background-color: #e9ecef !important;
+}
+
+.navbar-color {
+    background-color: #ffffff;
+}
+
+nav .sidenav-trigger {
+    color: #6c757d;
+    float: right;
+}
+
+.blueBar {
+    background-color: #178bd1;
+    height: 25px;
+}
+
+nav.pagesBarMob {
+    background-color: #fafafa;
+    box-shadow: none;
+    border: 1px solid;
+    border-color: #d7d7d7;
+    border-width: 1px 0;
+    height: 50px;
+    line-height: 48px;
+    margin-top: 8px;
+}
+
+/* SearchBar */
+
+.nav-wrapper .searchBar {
+    display: inline-block;
+    top: -17px;
+    background-color: #fff;
+    border: 1px solid #69cff6;
+    border-radius: 6px;
+    width: 360px;
+    height: 45px;
+    padding-left: 10px;
+}
+
+.nav-wrapper .searchBar input[type=search] {
+    background-color: transparent !important;
+    height: 100% !important;
+    border: none !important;
+    border-radius: 6px;
+    padding: 8px !important;
+    width: 91% !important;
+    padding-right: 36px;
+    box-sizing: border-box;
+}
+
+.nav-wrapper .searchBar input:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.nav-wrapper .searchBar .label-icon {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    right: 12px;
+    left: auto !important;
+    top: 0;
+    bottom: 0;
+}
+
+.nav-wrapper .searchBar .label-icon i {
+    line-height: normal;
+    height: auto;
+    color: #2766af !important;
+}
+
+/* SearchBar on the Page */
+
+nav#search-drawer {
+    height: 50px;
+    line-height: 50px;
+}
+
+nav#search-drawer label {
+    height: 100%;
+}
+
+nav#search-drawer label i {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+nav#search-drawer a i,
+nav#search-drawer i {
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+
+
+/* switches and inputs */
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:after {
+    background-color: #039be5;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:before,
+[type="radio"].with-gap:checked+span:after {
+    border: 2px solid #039be5;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #93dafa;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #03a9f4;
+}
+
+/* progress bars */
+.progress .indeterminate {
+    background-color: #039be5;
+}
+
+.progress {
+    background-color: #93dafa;
+}
+
+/* tabs */
+.tabs .tab a:hover,
+.tabs .tab a.active,
+.tabs .tab a {
+    color: #039be5;
+}
+
+.tabs .indicator {
+    background-color: #039be5;
+}
+
+
+
+/* navbar */
+.nav-wrapper.container {
+    width: 100%;
+    max-width: none;
+    padding: 0px 25px;
+
+}
+
+.nav-wrapper ul li:last-child {
+    display: none !important;
+}
+
+/* Buttons  */
+button.btn {
+    color: #fff;
+    background: #178bd1;
+    border: 1px solid #178bd1;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 0px;
+}
+
+button.btn:hover {
+    background: #2766af;
+    color: #fff;
+    border-color: #2766af;
+    box-shadow: none;
+}
+
+a.btn {
+    color: #fff;
+    background: #178bd1;
+    border: 1px solid #178bd1;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 0px;
+}
+
+a.btn:hover {
+    background: #2766af;
+    color: #fff;
+    border-color: #2766af;
+    box-shadow: none;
+}
+
+
+/* Chips Container */
+.chips-container {
+    margin: 30px 0px 25px;
+    float: none;
+    padding: 0;
+}
+
+.chips-container>div {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.chips-container .chip {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #d7d7d7;
+    font-size: 14px;
+    padding: 5px 12px;
+    height: auto;
+    line-height: normal;
+}
+
+.valign-wrapper a.chip {
+    background-color: #aaaaaa;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.chips-container .darken-2 {
+    background-color: white !important;
+    color: #000000 !important;
+    border-color: #039be5 !important;
+}
+
+/* logo */
+.brand-logo img {
+    display: none;
+}
+
+.property-logo {
+    height: 100%;
+    display: inline-flex;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.property-logo img {
+    max-width: 234px;
+    height: auto;
+    margin-right: 40px;
+}
+
+/* Page Bar */
+
+.pagesBar {
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.pagesBar li i {
+    height: 50px;
+    line-height: 50px;
+}
+
+.nav-wrapper .input-field input[type=search] {
+    width: calc(100% - 10rem);
+}
+
+/* User Body */
+.userbox-body a {
+    color: #000;
+}
+
+.mbs div {
+    color: #000;
+}
+
+.mediumText {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.mediumText a {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.hugeText {
+    font-size: 24px;
+}
+
+/* Footer CSS */
+
+.footerContainer {
+    margin: 100px 0px 0px;
+}
+
+.footerContainer .container {
+    max-width: 1420px;
+    width: 100%;
+}
+
+.footerContainer h4 {
+    font-size: 18px;
+    color: #034da2;
+    font-weight: 600;
+}
+
+.footerBlueBar {
+    background-image: url('https://dev.propertyonion.info/assets/footer/footer-head-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 140px;
+    margin-bottom: 7px;
+}
+
+.footerLogoWrap img {
+    max-width: 160px;
+}
+
+.textContainer ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.textContainer .infoMain {
+    padding-left: 70px
+}
+
+.textContainer ul li {
+    padding: 10px 0px;
+    max-width: 200px;
+}
+
+.textContainer ul li a {
+    font-size: 14px;
+    color: #034da2;
+    line-height: 20px;
+}
+
+.customerWrap li strong {
+    font-weight: 700;
+}
+
+.socialContainer {
+    max-width: 180px;
+}
+
+.socialContainer .socialImg {
+    text-align: right;
+    margin-top: -18px;
+}
+
+.socialContainer .socialImg img {
+    max-width: 115px;
+}
+
+.socialContainer .social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socialContainer .social-icons li {
+    display: inline-block;
+}
+
+.socialContainer .social-icons li+li {
+    margin-left: 9px;
+}
+
+.socialContainer .social-icons li a img {
+    max-width: 30px;
+}
+
+.socialContainer .social-icons li a img:hover {
+    box-shadow: rgb(136 165 191 / 35%) 0 0 12px 2px;
+}
+
+.bottomFooterBar {
+    height: 110px;
+    padding: 15px 5px;
+    background-color: #034da2;
+
+}
+
+.bottomFooterBar p {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.bottomFooterBar p strong {
+    font-weight: 700;
+}
+
+/* Answer SideBar */
+
+.answerSideBarContainer {
+    border: 1px solid;
+    min-height: 100vh;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-width: 0 0 1px 1px;
+    border-bottom-left-radius: 12px;
+    padding: 15px 45px 30px;
+}
+
+.answerSideBarContainer .answerSideBarContentWrap {
+    max-width: 360px;
+}
+
+.answerSideBarContainer .answerSideBarContentWrap h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.answerSideBarContainer .answerSideBarContentWrap .answerSideBarContentBox {
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    padding: 0px 32px 32px;
+}
+
+.answerSideBarContainer .asnwerList {
+    margin-top: 0px;
+}
+
+.answerSideBarContainer .asnwerList h3 {
+    margin: 30px 0px;
+}
+
+.answerSideBarContainer .asnwerList li {
+    margin-bottom: 10px;
+}
+
+.answerSideBarContainer .asnwerList li a {
+    color: #034da2;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* Counties Section  */
+
+.countiesCotainer {
+    margin-top: 80px;
+}
+
+.countiesMain {
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    border-radius: 6px;
+    height: 100%;
+    width: 100%;
+}
+
+.countiesMain .countiesHead {
+    background-color: #f4f6f7;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 10px 20px;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: center;
+    height: 58px;
+}
+
+.countiesMain .countiesHead h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.countiesMain .countiesBody {
+    padding: 0 !important;
+    height: calc(100% - 58px);
+    background-color: #fff;
+}
+
+.countiesBody .countiesContent .countiesContentBody {
+    padding: 10px 20px 0px;
+    max-height: 260px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.countiesBody .countiesContent {
+    display: flex;
+}
+
+.countiesBody .countiesContent div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.countiesContent .countiesContentBody h4 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.countiesContent .viewButton {
+    padding: 15px 0px;
+}
+
+.countiesContent .viewButton a {
+    color: #2766af;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.countiesContentBody .listStyle {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.countiesContentBody .listStyle li {
+    display: flex;
+    width: 50%;
+    font-size: 14px;
+    padding: 5px 10px 5px 0;
+    font-weight: 600;
+    color: #000000;
+}
+
+.listStyle li a {
+    color: #2766af;
+}
+
+.countiesContentBody .listStyle li div:first-child {
+    padding-right: 16px;
+}
+
+.countiesBody .imgBox {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* User Card Section  */
+
+.user-card-container {
+    margin-bottom: 0px;
+}
+
+.user-card-container .personbox {
+    margin-bottom: 0px;
+}
+
+.user-card-container .personbox .user-card {
+    display: flex;
+    min-height: 105px;
+}
+
+.user-card-container .personbox .user-card .lastseen {
+    font-size: 12px;
+}
+
+
+/* Card Panel Infostrip Admin  */
+
+.main-container-wrap {
+    padding: 0px 42px;
+}
+
+.em5v {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+
+/* Media Queries  */
+
+@media (min-width: 1201px) {
+
+    .countiesCotainer {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .textContainer .infoMain {
+        padding-left: 60px
+    }
+
+    .property-logo img {
+        max-width: 190px;
+        margin-right: 20px;
+    }
+
+    .nav-wrapper .searchBar {
+        top: -12px;
+        height: 40px;
+        max-width: 320px;
+    }
+
+    .nav-wrapper .searchBar input[type=search]::placeholder {
+        font-size: 15px;
+    }
+
+    nav .nav-wrapper .po-menu a {
+        padding: 0 7px;
+    }
+
+    .countiesContentBody .listStyle li {
+        font-size: 13px;
+    }
+
+    .userbox img {
+        max-width: 40px;
+    }
+
+    .answerSideBarContainer {
+        padding: 15px 25px 30px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .property-logo img {
+        max-width: 170px;
+        margin-right: 10px;
+    }
+
+    .nav-wrapper .searchBar {
+        max-width: 275px;
+        padding-left: 0px;
+    }
+
+    .nav-wrapper .searchBar input[type=search]::placeholder {
+        font-size: 13px;
+    }
+
+    .nav-wrapper .searchBar .label-icon i {
+        font-size: 18px;
+    }
+
+    nav .nav-wrapper .po-menu a {
+        padding: 0 6px;
+        font-size: 13px;
+    }
+
+    nav .nav-wrapper .po-menu a i {
+        display: none;
+    }
+
+    .r span {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1087px) {
+
+    .property-logo img {
+        max-width: 160px;
+        margin-right: 0px;
+    }
+
+    .nav-wrapper .searchBar {
+        max-width: 265px;
+        padding-left: 0px;
+    }
+
+    .nav-wrapper .searchBar input[type=search] {
+        padding: 6px !important;
+    }
+
+    .nav-wrapper .searchBar .label-icon {
+        right: 7px;
+    }
+
+    .socialContainer .social-icons li+li {
+        margin-left: 3px;
+    }
+
+    nav .nav-wrapper .po-menu a {
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 992.99px) {
+    nav .brand-logo {
+        left: 0%;
+        -webkit-transform: translateX(5%);
+        transform: translateX(5%);
+    }
+
+    .nav-wrapper .input-field input[type=search]:focus {
+        width: calc(100% - 7rem);
+        box-shadow: none;
+        border-bottom: none;
+        background-color: transparent;
+    }
+
+    .nav-wrapper .pagesBar>li:first-child {
+        display: none;
+    }
+
+    .textContainer {
+        margin: 30px 0px 0px;
+    }
+
+    .socialContainer {
+        margin: auto;
+    }
+
+    .answerSideBarContainer {
+        padding: 15px 42px 30px;
+    }
+
+    .answerSideBarContainer .answerSideBarContentWrap {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        height: auto;
+    }
+
+    nav .nav-wrapper {
+        padding: 7px;
+    }
+
+    .property-logo {
+        padding-left: 0px;
+    }
+
+    .nav-wrapper .searchBar {
+        max-width: 100%;
+        display: block;
+        width: 100%;
+    }
+
+    nav .nav-wrapper .side-nav-po {
+        top: -115px;
+    }
+
+    nav .nav-wrapper .side-nav-po i {
+        font-size: 18px;
+    }
+
+    .pagesBarMob {
+        height: 64px;
+    }
+
+    nav .pagesBar li {
+        height: 100%;
+    }
+
+    nav .pagesBar li a {
+        font-size: 13px;
+        padding: 15px 8px;
+        line-height: 18px;
+    }
+
+    .pagesBar li i,
+    .pagesBar li a i {
+        height: auto;
+        line-height: normal;
+    }
+
+    .sidenav li #search-box-mobile {
+        height: 45px;
+        color: white;
+    }
+
+    .sidenav li #search-box-mobile:focus {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .footerContainer h4 {
+        margin: 15px 0;
+    }
+
+    .textContainer .infoMain {
+        padding-left: 10px;
+    }
+
+    .textContainer ul li {
+        padding: 2px 0px;
+        max-width: 100%;
+    }
+
+    .bottomFooterBar {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+
+    .pagesBarMob {
+        height: 90px;
+    }
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cdcdcd;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}

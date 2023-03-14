@@ -1,0 +1,60 @@
+name: Build and deploy container to ecs service
+
+on:
+  push:
+    branches: main
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set branch-based environment variables
+        uses: iamtheyammer/branch-env-vars@v1.1.2
+        with:
+          # see https://github.com/marketplace/actions/branch-based-environment-variables-that-rock
+          bevOverwrite: true
+#           SERVICE_NAME: |
+#             main:dev_subs
+#             stage:stage_subs
+#           TASK_FAMILY:  |
+#             main:dev_subscription
+#             stage:subscription_stage        
+      - name: Cache local Maven repository
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+      - uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - name: Configure AWS Credentials Action For GitHub Actions
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+      - name: Run mvnw
+        run: ./mvnw -DskipTests clean package jib:build
+      - name: Read value from Properties-file
+        id: read_property
+        uses: christian-draeger/read-properties@1.0.1
+        with:
+          path: 'target/classes/git.properties'
+          property: 'git.commit.id.abbrev'
+      - name: run update-ecs
+        env:
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+          AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+          ECS_CLUSTER: ${{ secrets.ECS_CLUSTER }}
+          IMAGE_REPO_NAME: ${{ secrets.IMAGE_REPO_NAME }}
+          CI_COMMIT_SHORT_SHA: ${{ steps.read_property.outputs.value }}
+        run: ./update-ecs-service.sh
